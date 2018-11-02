@@ -1,0 +1,13 @@
+doctype html
+html 
+	head
+		title Login has succeeded
+		link(rel="stylesheet" type="text/css" href="/style.css")
+	body
+		div.info
+			p Hello #{response.username}, you are logged in.
+
+			a(href= url) 
+				button Log Out
+		div.image
+			img.happy(src='/happy.png')

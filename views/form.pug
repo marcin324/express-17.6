@@ -1,0 +1,17 @@
+doctype html
+html 
+	head
+		title Main page
+		link(rel="stylesheet" type="text/css" href="/style.css")
+	body
+		
+		div.info
+			p Log in with Google
+		
+		form(action='http://localhost:3000/auth/google' method='GET')
+			p Username: 
+				input(type='text', name='username')
+			p Password: 
+				input(type='text', name='password')
+			
+			button Log In
